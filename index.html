@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>محمد شعبان | Mechanical Engineer</title>
+  <title>ENG Mohamed Shaban | Mechanical Engineer</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       background-color: #0a0636;
@@ -37,6 +39,23 @@
       color: cyan;
       text-shadow: 0px 0px 10px cyan;
     }
+    .typing {
+      color: magenta;
+      font-size: 22px;
+      font-weight: bold;
+      border-right: 3px solid white;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(20, end), blink 0.7s infinite;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
     .email {
       display: inline-block;
       margin: 15px auto;
@@ -49,43 +68,31 @@
     .social-links a {
       margin: 0 10px;
       color: white;
-      font-size: 22px;
+      font-size: 28px;
       text-decoration: none;
+      transition: 0.3s;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: magenta;
-      color: white;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
+    .social-links a:hover {
+      color: cyan;
     }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="profile-pic">Your Photo</div>
-    <h1>محمد شعبان</h1>
-    <h3>Mechanical Engineer</h3>
-    <p>
-      أنا محمد شعبان، مهندس ميكانيكا شغوف بتخصصات الـ MEP 
-      (تكييف، مكافحة حريق، سباكة، غازات طبية)، عندي خبرة عملية 
-      وتدريب عملي باستخدام أدوات BIM والعمل الحر.
-    </p>
+    <h1>ENG Mohamed Shaban</h1>
+    <div class="typing">Mechanical Engineer</div>
 
-    <a class="email" href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+    <a class="email" href="mailto:mohamed.shaban.engineer@gmail.com">mohamed.shaban.engineer@gmail.com</a>
 
     <div class="social-links">
-      <a href="#">Telegram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Facebook</a>
+      <a href="https://wa.me/201094517814" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1DLp9ydAKB/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://youtube.com/@mohamedshaban-y4c?si=P7vz5qJi5aQJMn5B" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://t.me/pablo_0boy" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://www.linkedin.com/in/mohamed-shaban-67a05035a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://t.me/pablo_wa_modes" target="_blank"><i class="fa-solid fa-users"></i></a>
     </div>
-
-    <a class="btn" href="cv.pdf" download>تحميل السيرة الذاتية</a>
   </div>
 </body>
 </html>
