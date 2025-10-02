@@ -16,18 +16,19 @@
       padding: 0;
     }
     .card {
-      margin: 80px auto;
-      padding: 30px;
-      width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      width: 90%;              /* عرض مرن */
+      max-width: 400px;        /* حد أقصى */
       background: #141046;
       border-radius: 15px;
       box-shadow: 0px 0px 20px rgba(0,255,255,0.5);
     }
     .profile-pic {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      margin: 0 auto 20px;
+      margin: 0 auto 15px;
       overflow: hidden;
       border: 3px solid cyan;
       transition: transform 0.3s ease;
@@ -43,12 +44,14 @@
       object-position: top;
     }
     h1 {
+      font-size: 24px;
       color: cyan;
       text-shadow: 0px 0px 10px cyan;
+      margin: 10px 0;
     }
     .typing {
       color: magenta;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
       border-right: 3px solid white;
       display: inline-block;
@@ -65,44 +68,70 @@
     }
     .email {
       display: inline-block;
-      margin: 15px auto;
-      padding: 10px 15px;
+      margin: 12px auto;
+      padding: 8px 12px;
       border: 1px solid cyan;
       border-radius: 20px;
       color: cyan;
       text-decoration: none;
+      font-size: 15px;
     }
     .social-links a {
-      margin: 0 10px;
+      margin: 0 8px;
       color: white;
-      font-size: 28px;
+      font-size: 26px;
       text-decoration: none;
       transition: 0.3s;
     }
     .social-links a:hover {
       color: cyan;
     }
-    /* زرار CV */
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: magenta;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #00bcd4;   /* أزرق سماوي */
       color: white;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 15px;
       transition: 0.3s;
     }
     .btn:hover {
       background: cyan;
       color: black;
     }
+
+    /* تحسين العرض على الشاشات الصغيرة */
+    @media (max-width: 480px) {
+      .card {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .typing {
+        font-size: 16px;
+      }
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+      }
+      .social-links a {
+        font-size: 22px;
+        margin: 0 6px;
+      }
+      .btn {
+        font-size: 13px;
+        padding: 8px 14px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <!-- الصورة في الأعلى وتفتح عند الضغط -->
+    <!-- الصورة -->
     <a href="me.jpg" target="_blank">
       <div class="profile-pic">
         <img src="me.jpg" alt="ENG Mohamed Shaban">
