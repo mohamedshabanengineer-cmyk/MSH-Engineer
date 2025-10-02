@@ -82,6 +82,22 @@
     .social-links a:hover {
       color: cyan;
     }
+    /* زرار CV */
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: magenta;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: cyan;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -96,7 +112,9 @@
     <h1>ENG Mohamed Shaban</h1>
     <div class="typing">Mechanical Engineer</div>
 
-    <a class="email" href="mailto:mohamed.shaban.engineer@gmail.com">mohamed.shaban.engineer@gmail.com</a>
+    <a class="email" href="mailto:mohamed.shaban.engineer@gmail.com">
+      <i class="fas fa-envelope"></i> mohamed.shaban.engineer@gmail.com
+    </a>
 
     <div class="social-links">
       <a href="https://wa.me/201094517814" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -106,6 +124,9 @@
       <a href="https://www.linkedin.com/in/mohamed-shaban-67a05035a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://t.me/pablo_wa_modes" target="_blank"><i class="fa-solid fa-users"></i></a>
     </div>
+
+    <!-- زر تحميل CV -->
+    <a class="btn" href="cv.pdf" download><i class="fas fa-file-download"></i> Download CV</a>
   </div>
 </body>
 </html>
